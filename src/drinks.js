@@ -448,7 +448,7 @@ router.post('/orders/apply', async (req, res) => {
       const result = await removeOneDrinkFromUser(userId, drinkId);
 
       payload.embeds.push({
-        title: `Person ${result.user.id}:`,
+        title: `${result.user.name}:`,
         description: `**${result.drink.name}**`,
         color: 3447003,
         image: {
