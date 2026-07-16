@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drink Tracker</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Users and their drinks</h1>
+
+      <section class="add-drink-panel" id="order-panel">
+        <h2>Apply order</h2>
+        <form id="order-form" class="drink-form order-form">
+          <div id="order-selectors" class="order-selectors"></div>
+          <button type="submit">Apply</button>
+        </form>
+        <p id="order-message" class="status-message" aria-live="polite"></p>
+      </section>
+
+      <div id="users"></div>
+
+      <section class="add-drink-panel">
+        <h2>Add a new person</h2>
+        <form id="user-form" class="drink-form">
+          <label>
+            Name
+            <input id="user-name" name="name" type="text" placeholder="e.g. Alice" required />
+          </label>
+
+          <button type="submit">Create person</button>
+        </form>
+        <p id="user-form-message" class="status-message" aria-live="polite"></p>
+      </section>
+
+      <section class="add-drink-panel">
+        <h2>Add a drink to a user</h2>
+        <form id="drink-form" class="drink-form">
+          <label>
+            User
+            <select id="user-select" name="userId" required></select>
+          </label>
+
+          <label>
+            Drink name
+            <input id="drink-name" name="name" type="text" placeholder="e.g. Cola" required />
+          </label>
+
+          <label>
+            Image
+            <select id="drink-image" name="image" required></select>
+          </label>
+
+          <label>
+            Amount
+            <input id="drink-amount" name="amount" type="number" min="1" value="1" required />
+          </label>
+
+          <button type="submit">Add drink</button>
+        </form>
+        <p id="form-message" class="status-message" aria-live="polite"></p>
+      </section>
+
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

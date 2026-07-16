@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.add-drink-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+}
+
+.drink-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.drink-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.drink-form input,
+.drink-form select,
+.drink-form button {
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font: inherit;
+}
+
+.drink-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.status-message {
+  min-height: 1.2rem;
+  margin: 0.75rem 0 0;
+  color: #0f766e;
+}
+
+#users {
+  display: grid;
+  gap: 1rem;
+}
+
+.user-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.user-card h2 {
+  margin: 0 0 0.2rem;
+}
+
+.email {
+  color: #6b7280;
+  margin-top: 0;
+}
+
+.user-card ul {
+  padding-left: 1.25rem;
+}
+
+.user-card li {
+  margin-bottom: 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.drink-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.drink-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.remove-drink-button {
+  border: none;
+  background: #dc2626;
+  color: white;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.order-selectors {
+  display: grid;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.order-user-picker {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.order-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.order-select {
+  flex: 1;
+}
+
+.order-preview-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.drink-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.error {
+  color: #b91c1c;
+}
