@@ -5,7 +5,7 @@
 
 */
 -- AlterTable
-ALTER TABLE `drink` ADD COLUMN `image` VARCHAR(255) NULL;
+ALTER TABLE "Drink" ADD COLUMN "image" VARCHAR(255) NULL;
 
 -- CreateIndex
-CREATE UNIQUE INDEX `Drink_name_key` ON `Drink`(`name`);
+CREATE UNIQUE INDEX "Drink_name_key" ON "Drink"("name");
