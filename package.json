@@ -8,13 +8,15 @@
   "description": "project for drink ordering",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "build": "npx prisma generate",
+    "start": "npx prisma migrate deploy && node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch src/index.js",
     "db:migrate": "npx prisma migrate dev",
     "db:seed": "npx prisma db seed",
     "db:studio": "npx prisma studio",
-    "db:reset": "npx prisma migrate reset"
+    "db:reset": "npx prisma migrate reset",
+    "postinstall": "npx prisma generate"
 
   },
   "keywords": [],

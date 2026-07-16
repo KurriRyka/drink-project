@@ -6,7 +6,7 @@ const drinksRouter = require('./drinks');
 const prisma = require('./lib/prisma');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 // Middleware to parse JSON bodies (will be useful in later steps)
 app.use(express.json());
@@ -27,8 +27,8 @@ app.get('/health', (req, res) => {
 app.use('/api', drinksRouter);
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });
 
 // Graceful shutdown
