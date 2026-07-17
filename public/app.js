@@ -6,6 +6,7 @@ const drinkImageOptions = [
   'LongDrinkPear_S.png',
   'RaspberryLemon_S.png',
   'StrawberryLime_S.png',
+  'ImagelessDrink.png',
 ];
 
 async function loadUsers() {
